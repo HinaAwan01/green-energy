@@ -1,1 +1,223 @@
+/************
+COLORS USED:
+#000;
+#222;
+#444;
+#666;
+#999;
+#CCC; 
+#DDD;
+#EEE;
+#393c40;
+#4287f5;
+darkblue
+royalblue
+********/
+
+/********** import font pair for body and heading  *************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:wght@700|Open+Sans');
+
+/***************************************************************************************************/
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/************
+DEFAULT STYLE
+*************/
+
+* {
+    box-sizing: border-box;     
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;    
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;        
+}
+
+h1{
+    line-height: 1.5;
+    font-family: 'Gentium Book Basic', serif;
+    letter-spacing: 3px;
+    transform: translateY(0.5rem);
+}
+
+h4{
+    font-family: 'Gentium Book Basic', serif;
+    font-size:1.5rem;    
+}
+
+/*box class used in all the divs*/
+
+.bg-header .box,
+.bg-footer .box {
+    padding: 2rem 2rem;
+}
+
+.bg-main-content .box {
+    padding: 0.5rem;
+    color: #666;
+}
+
+/* style for the header of the html page*/
+header {
+    font-size: 1rem;   
+}
+
+
+.bg-header {
+    background-image: url(../img/bg-masthead.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-color: darkblue;
+    background-blend-mode: multiply;
+}
+
+
+#tag-line {
+    -webkit-mask-image: url(https://dl.dropbox.com/s/u92nd5fpuatesd0/mask.png?dl=0);
+    -o-mask-image: url(https://dl.dropbox.com/s/u92nd5fpuatesd0/mask.png?dl=0);
+    -moz-mask-image: url(https://dl.dropbox.com/s/u92nd5fpuatesd0/mask.png?dl=0);
+    mask-image: url(https://dl.dropbox.com/s/u92nd5fpuatesd0/mask.png?dl=0);
+    color:white;
+    text-align: center;
+}
+
+
+/* style for nav bar */
+.bg-nav ul{    
+    list-style: none;
+    padding:0.5% 5%;
+}
+
+.bg-nav ul a:link{    
+    text-decoration: none;
+    color:#4287f5;
+    
+}
+
+.bg-nav ul a:visited{   
+    color:#393c40;   
+}
+
+.bg-nav ul a:hover{   
+    color:#4287f5;    
+}
+
+
+/* style of main content */
+
+#active{
+    
+    background-color: #393c40;
+    color:white;
+    
+}
+
+.rule{    
+    margin: 5%;
+    
+}
+
+.controls{    
+    padding:5% 5%;
+
+}
+
+.btn{
+    background-color: #4287f5; /* Blue */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-right:2%;
+    width:120px;
+    height:50px;
+}
+
+.new-content{    
+    display: flex;
+    flex-direction: column;
+    padding:5% 5%;    
+}
+
+
+
+
+/* style for the footer of the html page */
+.bg-footer{    
+    display: grid;
+    grid-template-rows: auto auto;
+    overflow: hidden;
+    background-color: grey;
+    text-align: center;   
+    padding:1.5rem 1rem;
+    
+}
+
+.bg-footer ul{    
+    list-style: none;    
+}
+
+.bg-footer ul li{    
+    display: inline;
+    padding:0 10px;    
+}
+
+
+/* media query */
+
+
+@media screen and (min-width: 50rem) {
+    
+    
+    #tag-line {        
+        font-size: 4rem;
+    }
+
+    body {        
+        font-size: 1rem;
+        max-width:1600px;
+    }
+    
+    .bg-nav ul{        
+
+        padding:0.5% 15%;
+    }
+        
+    .bg-nav ul li{    
+        display: inline;
+        padding:0 10px;    
+    }  
+    
+    .rule{    
+        margin: 1% 16%;
+    }
+    
+    .controls{    
+        padding:2% 16%;
+    } 
+    
+    .new-content{    
+        display: flex;
+        flex-direction: row;
+        padding:1% 15%;    
+    }
+    
+    
+
+    
+}
+
+
 
