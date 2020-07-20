@@ -53,7 +53,7 @@ function addContent(ev){
         
          newContent.innerHTML=`<figure class="newContent">
                                 <img src="img/oil-cleaner.jpg" alt="Oil Cleaners"/>
-                                <figcaption>Bio Fuels</figcaption>
+                                <figcaption>Oil Cleaners</figcaption>
                              </figure>
                              <p>In the changing global marketplace,
                                 competitiveness in the oil and gas
